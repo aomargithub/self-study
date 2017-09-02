@@ -1,0 +1,20 @@
+
+
+
+
+apply plugin: 'java-library'
+
+sourceCompatibility= 1.8
+targetCompatibility= 1.8
+
+repositories {
+   maven {
+        url 'https://repo.spring.io/libs-milestone'
+   }
+}
+
+dependencies {
+   compile 'org.springframework.data:spring-data-cassandra:2.0.0.RC2'
+   compile("org.springframework.boot:spring-boot-starter-web:2.0.0.M3")
+}
+
